@@ -62,14 +62,9 @@ html {
   box-sizing: border-box;
 }
 
-/* button */
-/* ==========================================
-We use the Checkbox hack to activate the flipping.
-No JS needed.
-https://css-tricks.com/the-checkbox-hack/
+/*_________________________________________________________________________________________________________________ */
+/* button positioning */
 
-Anything marked 'for codepen' is just for presentation inside of codepen.
-========================================== */
 .puzzle-container{
   display:grid;
   width:100%;
@@ -88,13 +83,16 @@ Anything marked 'for codepen' is just for presentation inside of codepen.
   align-items: center;
 }
 
+/* scan button looks good now */
 #scanButton{
-  width:400px;
-  height:300px;
-  font-size: 40px;
-  color: white;
-  background:navy; 
-  border-radius: 100px;
+  width: 190px;
+  height: 120px;
+  background-color: transparent;
+  background-image: url(scanning.svg);
+  background-repeat: no-repeat;
+  background-size: 310px;
+  border-radius: 90px;
+  background-position: center;
 }
 
 #swipe-button{
@@ -136,6 +134,7 @@ justify-content: center;
   position: relative;
   top:70px
 }
+/*___________________________________________________________________________________________________________*/
 
 input[type=checkbox] { 
   /*Hiding the checkbox. We never want to see it.*/
