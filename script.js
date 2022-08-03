@@ -1,30 +1,22 @@
-// querySelector for html elements
-const harryPotterStart = document.querySelector("#harryPotterStart");
-const robloxStart = document.querySelector("#robloxStart");
-const spaceStart = document.querySelector("#spaceStart");
-const startButton = document.querySelector("#start");
+// // querySelector for html elements
+// const startButton = document.querySelector("#start");
 
-// start button switch
-startButton.addEventListener("click", (e) => {
-  console.log("start");
-  location.replace(`${checkButton()}.html`);
-});
+// // start button switch
+// if(startButton){
+//   startButton.addEventListener('click', checkButton, false);
+// }
 
 function checkButton() {
   var getSelectedValue = document.querySelector(
     'input[name="gameroom"]:checked');
   console.log(getSelectedValue.value);
-  return getSelectedValue.value;
+  location.replace(`${getSelectedValue.value}.html`);
 }
 
-// space js
-const scanButton = document.querySelector("#scan");
-const swipeButton = document.querySelector("#swipeCard");
-const wiresButton = document.querySelector("#fixWires");
-console.log(scanButton);
-console.log()
 
 
+document.getElementById("start").onclick = function () {
+        location.href = "space/space.html";}
 // typing text first screen
 // do later
 

@@ -17,9 +17,12 @@
   class="os-host os-theme-dark os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-transition os-host-overflow-x"
   data-new-gr-c-s-check-loaded="14.1071.0" data-gr-ext-installed="">
 
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   -->
   <!--     HERO TITLE     -->
   <section class="hero is-info is-small">
-    <div class="hero-body" style = "background: black">
+    <div class="hero-body" style="background: black">
       <div class="container has-text-centered">
         <p class="title">
           Escape The Game
@@ -33,7 +36,7 @@
   <!--     BOX     -->
   <div class="box cta">
     <p class="has-text-centered">
-      <span style = "font-size : 30px"><b>Pick a Theme</b></span>
+      <span style="font-size : 30px"><b>Pick a Theme</b></span>
     </p>
   </div>
   <!--     CONTAINER 1     -->
@@ -148,13 +151,13 @@
           <div class="card-image">
             <figure class="image is-4by3">
               <img
-                src="https://img.freepik.com/premium-photo/spaceship-grunge-interior-with-view-planet-earth_117023-176.jpg?w=2000"
+                src="https://cdn1.epicgames.com/salesEvent/salesEvent/amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075"
                 alt="Placeholder image">
             </figure>
           </div>
           <div class="card-content">
             <div class="content">
-              <h4>Spaceship<br>Difficulty:
+              <h4>Among Us<br>Difficulty:
                 <svg height="25" width="20">
                   <circle cx="10" cy="15" r="8" stroke="black" stroke-width="0" fill="lime" />
                 </svg>
@@ -186,9 +189,7 @@
                   <circle cx="10" cy="15" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
                 </svg>
               </h4>
-              <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer
-                enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper
-                viverra nam.</p>
+              <p>Become a crewmember in among us and vote off the impostor to ensure the ship's safety</p>
             </div>
           </div>
         </div>
@@ -196,10 +197,36 @@
     </div>
   </section>
   <br>
-  <!--  BUTTON  -->
-  <div class="start-button has-text-centered">
-    <button id="start" class="button is-rounded is-medium is-responsive is-black is-centered" >Start</button>
-  </div>
+  <br>
+
+  <!--     Contact info -->
+
+  <section class="hero is-black">
+    <div class="hero-body">
+
+      <div class="has-text-centered" style="font-size:24px">
+        <p style="margin-bottom: 15px;">What did you think about our game?</p>
+      </div>
+      <div>
+        <div class="has-text-centered" style="margin-bottom: 10px;">
+          <form action="https://formsubmit.co/quoctrinh.highschool@gmail.com" method="POST" class="contact-container">
+            <input type="email" name="email" id="text" style="width: 430px;" placeholder="Email Address"
+              style="margin-bottom: 10px" required>
+        </div>
+        <div class="has-text-centered" style="margin-bottom: 5px;">
+          <textarea id="contact-content" name="content" style="width: 430px; height: 150px"
+            placeholder="Your Feedback"></textarea>
+        </div>
+        <div class="has-text-centered">
+          <button type="submit" id="submit" class="submit" style="width: 435px; font-size: 20px;">Send</button>
+          <script src="script.js" type="text/javascript" defer></script>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <br>
+  </section>
 
   <!--     FOOTER     -->
   <footer>
@@ -265,10 +292,10 @@
                   <circle cx="10" cy="15" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
                 </svg>
                 <svg height="25" width="20">
-                  <circle cx="10" cy="15" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
                 </svg>
                 <svg height="25" width="20">
-                  <circle cx="10" cy="15" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
                 </svg>
               </p>
             </div>
@@ -287,9 +314,9 @@
             </ul>
           </div>
           <div class="control">
-            <button id="start" style="margin-right: 10px" class="button is-rounded is-medium is-responsive is-black" >Start</button>
-            <input type="radio" name="gameroom" id="harryPotterStart" style="margin-right: 10px" style = "font-size: 20px" value="harryPotter" >
-            Select
+            <button onclick="location.href = 'harryPotter.html';" id="start1" style="margin-right: 10px"
+              class="button is-rounded is-medium is-responsive is-black">Start</button>
+            <!--             <input type="radio" name="gameroom" id="harryPotterStart" style="margin-right: 10px" style = "font-size: 20px" value="harryPotter" >Select -->
           </div>
         </div>
       </div>
@@ -321,26 +348,56 @@
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Roblox</p>
-              <p class="subtitle is-6">Difficulty: 4/10</p>
+              <p class="title is-4">Roblox Theme</p>
+              <p class="subtitle is-6">Difficulty:
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#fcf06a" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#fcf06a" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#fcf06a" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#fcf06a" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+              </p>
             </div>
           </div>
           <div class="content">
-            Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't
-            get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the
-            pit mummah Yessah, mummah muckle riyht on'ta her
-            Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down
-            cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than
-            molasses going uphill in January.
-            Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri
-            n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka
-            chtenff ehyeog cehye. Zhro y'hah
-            nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n,
-            sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
+            <p>Join the Roblox world and find where the Bacon King has hidden all of the Rocitizens.</p>
+            <p>List of puzzles type that might occured:</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
           <div class="control">
-            <input type="radio" name="gameroom" style="margin-right: 10px" id="robloxStart" value="roblox">
-            Select
+            <button onclick="location.href = 'roblox.html';" id="start" style="margin-right: 10px"
+              class="button is-rounded is-medium is-responsive is-black">Start</button>
+            <!--             <input type="radio" name="gameroom" style="margin-right: 10px" id="robloxStart" value="roblox">Roblox -->
           </div>
         </div>
       </div>
@@ -359,37 +416,67 @@
       <div class="card">
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
+            <img
+              src="https://cdn1.epicgames.com/salesEvent/salesEvent/amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075"
+              alt="Placeholder image">
           </figure>
         </div>
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img
-                  src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/000000/external-spaceship-space-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-2.png" />
+                <img src="https://img.icons8.com/color/480/among-us.png" />
               </figure>
             </div>
             <div class="media-content">
-              <p class="title is-4">Spaceship Theme</p>
-              <p class="subtitle is-6">Think of a better title later</p>
+              <p class="title is-4">Among Us Theme</p>
+              <p class="subtitle is-6">Difficulty:
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="lime" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="lime" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+                <svg height="20" width="20">
+                  <circle cx="10" cy="12" r="8" stroke="black" stroke-width="0" fill="#e3e3e3" />
+                </svg>
+              </p>
             </div>
           </div>
           <div class="content">
-            Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't
-            get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the
-            pit mummah Yessah, mummah muckle riyht on'ta her
-            Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down
-            cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than
-            molasses going uphill in January.
-            Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri
-            n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka
-            chtenff ehyeog cehye. Zhro y'hah
-            nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n,
-            sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
+            <p>Fix the spaceship as a crewmember of the amongus spacecrew! There is an impostor among the crew, killing crewmembers and destroying the ship. Find the impostor and fix the ship before it's too late.</p>
+            <p>Your tasks are:</p>
+            <ul>
+              <li>Find the impostor</li>
+              <li>Do your tasks</li>
+              <li>Vote the impostor off the ship</li>
+            </ul>
           </div>
           <div class="control">
-            <input type="radio" name="gameroom" style="margin-right: 10px" id="spaceStart" value="space"> Select
+            <button onclick="location.href = 'space/space.html';" id="start" style="margin-right: 10px"
+              class="button is-rounded is-medium is-responsive is-black">Start</button>
+            <!--             <input type="radio" name="gameroom" style="margin-right: 10px" id="spaceStart" value="space">Select -->
           </div>
         </div>
       </div>
@@ -399,7 +486,7 @@
   </div>
   <!-- end tiny modal card -->
 
- 
+
   <!--  SCRIPTS  -->
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
   <script src="script.js" type="text/javascript" defer></script>

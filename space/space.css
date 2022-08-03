@@ -1,0 +1,235 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.is-centered{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/* amongus background */
+.amongusBckg {
+  background-image: url(amongus.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Space CSS */
+/* Typing letters first screen */
+.wrapper {
+  text-align: center;
+}
+
+#button{
+  position: relative;
+  right:90px
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	letter-spacing: 1px;
+  font-size: 30px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: #636363;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #636363; 
+	}
+}
+
+/* INVENTORY */
+html {
+  box-sizing: border-box;
+}
+
+/* button */
+/* ==========================================
+We use the Checkbox hack to activate the flipping.
+No JS needed.
+https://css-tricks.com/the-checkbox-hack/
+
+Anything marked 'for codepen' is just for presentation inside of codepen.
+========================================== */
+.puzzle-container{
+  display:grid;
+  width:100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+}
+
+#scan-button{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scanButton{
+  width:400px;
+  height:300px;
+  font-size: 40px;
+  color: white;
+  background:navy; 
+  border-radius: 100px;
+}
+
+#swipe-button{
+  grid-column: 2/4;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#swipeButton{
+  width:900px;
+  height:300px;
+  font-size: 40px;
+  color: white;
+  background:maroon; 
+  border-radius: 70px;
+}
+
+#wires-button{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wires-button{
+display: flex;
+justify-content: center;
+}
+
+#wiresButton{
+  width:337px;
+  height:200px;
+  font-size: 40px;
+  color: white;
+  background:#8f8a00; 
+  border-radius: 100px;
+  position: relative;
+  top:70px
+}
+
+input[type=checkbox] { 
+  /*Hiding the checkbox. We never want to see it.*/
+  position: absolute; left: -9999em; 
+}
+
+.container { 
+  /*Animation elements*/
+  display: block;
+  perspective: 600px;
+  position: relative;
+  transition: all .1s;
+  width: 250px; height:250px;
+  
+  &:hover { 
+    /*Make it a little bigger on hover,
+    to indicate that it can be clicked on.*/
+    transform: scale(1.05,1.05); 
+  }
+}
+
+.card {
+  cursor: pointer; /*Another clue that this can be clicked on*/
+  position: absolute; top: 0; left: 0;
+  width: inherit; height: inherit; /*Size of the card is set by the container*/
+  
+  backface-visibility: hidden; /*Makes a card invisible from behind.*/
+  transform-style: preserve-3d;
+  transition: all .4s ease-in-out;
+}
+.front {
+  /*Background stuffs for codepen*/
+  background: url('https://farm2.staticflickr.com/1005/525373055_04e1e02c0b.jpg') no-repeat;
+  background-size: cover;
+  
+  /*Default rotation values*/
+  transform: rotateX(0deg) rotateY(0deg);
+}
+.back {
+  
+  visibility: hidden; 
+  /*Default rotation value*/
+  transform: rotateY(-180deg);
+}
+
+/*When the container is clicked the checkbox is marked as checked. This activates the CSS below. */
+input[type=checkbox]:checked {
+  .container {
+    animation: lift .4s linear;
+    .card {
+      animation: lift-shadow .4s linear;
+    }
+    .back {
+      visibility: visible;
+      transform: rotateX(0deg) rotateY(0deg);  
+    }
+    .front {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+@keyframes lift {
+  0% {
+    transform: scale(1,1);
+  }
+  20% {
+    transform: scale(1.2,1.2);
+  }
+  80% {
+    transform: scale(1.1,1.1);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
+@keyframes lift-shadow {
+  0% {
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+  20% {
+    box-shadow: 0 0 35px rgba(0,0,0,0.6);
+  }
+  80% {
+    box-shadow: 0 0 35px rgba(0,0,0,0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+}
+
+/* scan button */
+#scan {
+  position:relative;
+  
+}

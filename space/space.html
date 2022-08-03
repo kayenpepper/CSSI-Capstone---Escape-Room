@@ -10,7 +10,7 @@
   <meta name="description" content="Free bulma templates" />
   <!-- Bulma Version 0.9.0 -->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="space.css" />
 </head>
 
 <body>
@@ -19,31 +19,30 @@
     <div class="hero-body">
       <div id="main-body" class="container">
         <!--     MAIN CONTAINER     -->
-        <div>
-          <button id="scan" class="button">Scan</button>
+        <div class="wrapper">
+          <div id="text"></div>
+          <span id="cursor"></span>
         </div>
-        <div>
-          <button id="swipeCard" class="button">Swipe Card</button>
-        </div>
-        <div>
-          <button id="fixWires" class="button">Fix Wires</button>
+        <div id="button" class="container has-text-centered">
+            <button onclick= "location.href = 'amongus.html';" id="enter" class="button is-rounded is-medium is-responsive is-white has-text-centered hidden" style = "font-size: 30px"><b>Enter the Spaceship</b></button>
+        
         </div>
       </div>
     </div>
   </section>
   <!-- SECTION 1 INVENTORY -->
-  <section>
+<!--   <section>
     <container class="container">
-      
+
     </container>
-  </section>
+  </section> -->
 
 
   <!--  First screen intro  -->
 
   <p id="firstText"></p>
-
-  <script src="script.js" type="text/javascript" defer></script>
+ 
+  <script src="typing.js" type="text/javascript" defer></script>
 </body>
 
 </html>
