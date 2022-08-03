@@ -1,4 +1,9 @@
 let button = document.querySelector("#enter");
+// if(button){
+//   button.addEventListener('click', function () {
+//         location.href = "amongus.html";}, false);
+// }
+
 document.getElementById("enter").onclick = function () {
         location.href = "amongus.html";}
 // button.style.visibility = "hidden";
