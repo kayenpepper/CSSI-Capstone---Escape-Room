@@ -1,0 +1,156 @@
+.firstbg {
+  background-image: url('images/scene1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.emptybg {
+  background-image: url('images/emptybg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.baconsbg {
+  background-image: url('images/baconsbg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.castlebg {
+  background-image: url('images/castle.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.guardsbg {
+  background-image: url('images/guards.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.fightbg {
+  background-image: url('images/fightbg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.doorsbg {
+  background-image: url('images/doorsbg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.lairbg {
+  background-image: url('images/lair.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.trophybg {
+  background-image: url('images/trophybg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  visibility: visible;
+}
+
+.textbox {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top:25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rblxcenter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  position: absolute;
+  top: 550px;
+  right: 50px;
+}
+
+#textbox3 {
+  top: 100px;
+}
+
+.flip-horizontally {
+  transform: scaleX(-1);
+}
+
+.mcpos {
+  left:180px;
+  top: 130px;
+}
+
+.mcpos2 {
+  left:-350px;
+  top: 350px;
+}
+
+.mcpos3 {
+  left: 300px;
+  top: 300px;
+}
+
+.bpos {
+  right: 140px;
+  top: -190px;
+}
+
+.bpos2 {
+  bottom: 40px;
+}
+
+/* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+.fade-out {
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.door {
+  max-width: 782px;
+  max-height: 400px;
+}

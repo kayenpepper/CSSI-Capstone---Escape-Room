@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roblox - CSSI Escape Room</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/40/000000/esc.png" type="image/x-icon" />
+  <meta name="description" content="Free bulma templates" />
+  <!-- Bulma Version 0.9.0 -->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="roblox.css" />
+</head>
+
+<body>
+  <section class="hero is-fullheight firstbg">
+
+    <!-- first textbook -->
+    <div id="textbox1" class="box textbox">
+      Hmmmm...just a normal day, I want to play ROBLOX!
+    </div>
+
+    <!-- next1 button -->
+    <div id="next1" class="container hidden next">
+      <button class="button is-info button is-large">Next</button>
+    </div>
+
+    <!-- start roblox button -->
+    <div id="playroblox" class="rblxcenter hidden">
+      <button class="button is-success button is-large"><b>Play ROBLOX</b></button>
+    </div>
+
+    <!-- Bloxie Land card -->
+    <div class="columns">
+      <div class="column"></div>
+      <div class="column is-half">
+        <div class="card hidden">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/bloxieland.png" alt="Bloxie Land image">
+            </figure>
+            <!-- second textbook -->
+            <div id="textbox2" class="box hidden textbox">
+              This game seems interesting!
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4 center2">Bloxie Land</p>
+                <div id="payrobux" class="center2 hidden">
+                  <button class="button is-success button is-large"><b>25 robux</b></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column"></div>
+    </div>
+
+    <!-- buy robux -->
+    <div id="buyrobux" class="container hidden next">
+      <button class="button is-info button is-large">Buy robux</button>
+    </div>
+
+    <!-- show amount of robux -->
+    <h1 id="amountofrobux" class="title has-text-right textbox hidden">Robux: </h1>
+
+    <!-- choose to pay robux -->
+    <div class="options hidden">
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column is-full"><button id="robux80" class="button is-light button is-large">
+          <p>$0.99</p>&nbsp;<p class="has-text-success">80</p>
+        </button></div>
+      <div class="column is-full"><button id="robux400" class="button is-light button is-large">
+          <p>$4.99</p>&nbsp;<p class="has-text-success">400</p>
+        </button></div>
+      <div class="column is-full"><button id="robux800" class="button is-light button is-large">
+          <p>$9.99</p>&nbsp;<p class="has-text-success">800</p>
+        </button></div>
+    </div>
+
+    <!-- put in credit info -->
+    <h1 id="creditq" class="title is-1 hidden rblxcenter">What’s your credit card number?<br>(hint: the year ROBLOX was
+      released)</h1>
+
+    <!-- third textbook -->
+    <div id="textbox3" class="box hidden textbox">
+      Yay, now I can play!
+    </div>
+
+    <!-- main character -->
+    <div id="maincharacter" class="container hidden">
+      <p>
+        <img id="char" src="images/maincharacter.png" alt="main character" />
+      </p>
+    </div>
+
+    <!-- bacon character -->
+    <div id="baconhair" class="container hidden flip-horizontally">
+      <p>
+        <img id="char" src="images/baconhair.png" alt="bacon character" />
+      </p>
+    </div>
+
+    <!-- bacon character -->
+    <div id="bossbacon" class="container hidden flip-horizontally">
+      <p>
+        <img id="char" src="images/bossbacon.png" alt="bossbacon character" />
+      </p>
+    </div>
+
+    <!-- fourth textbook -->
+    <div id="textbox4" class="box hidden textbox">
+      Wow, no one is here...
+    </div>
+
+    <!-- lookaround button -->
+    <div id="lookaround" class="container hidden next">
+      <button class="button is-info button is-large">Look Around</button>
+    </div>
+
+    <!-- fifth textbook -->
+    <div id="textbox5" class="box hidden textbox">
+      Nevermind, everyone's just a bacon
+    </div>
+
+    <!-- talk to bacons button -->
+    <div id="talktobacon" class="container hidden next">
+      <button class="button is-info button is-large">Talk to someone</button>
+    </div>
+
+    <!-- sixth textbook -->
+    <div id="textbox6" class="box hidden textbox">
+      Please help! The Bacon King has turned us all into Bacons! The BACON is missing!!! They’re in the castle! Go to
+      the store and buy the Blo-
+    </div>
+
+    <!-- go to shop button -->
+    <div id="gotoshop" class="container hidden next">
+      <button class="button is-info button is-large">Go to the shop</button>
+    </div>
+
+    <!-- shop items -->
+    <div class="shop hidden">
+      <div class="columns is-centered">
+        <div class="column is-one-fifth">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://tr.rbxcdn.com/93fca5bf763d14b73c61f6faea0def3b/420/420/Hat/Png"
+                  alt="Bloxie gun image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 center2">Bloxie Gun</p>
+                  <div id="bloxiegun" class="center2 hidden">
+                    <button class="button is-success button is-large"><b>625 robux</b></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-fifth">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://tr.rbxcdn.com/b8b940715905b327aed9b72c1ff894b4/420/420/Hat/Png"
+                  alt="Block sword image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 center2">Block Sword</p>
+                  <div id="blocksword" class="center2 hidden">
+                    <button class="button is-success button is-large"><b>470 robux</b></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-fifth">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://tr.rbxcdn.com/3cd20aec82c0e661b3c9f345f3d3889c/420/420/Gear/Png"
+                  alt="Bloxy Cola image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4 center2">Bloxy Cola</p>
+                  <div id="bloxycola" class="center2 hidden">
+                    <button class="button is-success button is-large"><b>10 robux</b></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="shoptitle" class="hidden">
+      <h1 class="title is-1 center2 textbox">SHOP</h1>
+    </div>
+
+    <!-- seventh textbook -->
+    <div id="textbox7" class="box hidden textbox">
+      I guess this is the castle.
+    </div>
+
+    <!-- next2 button -->
+    <div id="next2" class="container hidden next">
+      <button class="button is-info button is-large">Next</button>
+    </div>
+
+    <!-- getting into the castle -->
+    <div id="getintoc" class="hidden">
+      <div class="columns">
+        <!-- guard 1 -->
+        <div class="column is-one-quarter">
+          <div id="guardone" class="container flip-horizontally">
+            <p>
+              <img id="char" src="http://images6.fanpop.com/image/forum/224000/224095_1507478348489_full.png"
+                alt="guard1" />
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="columns is-centered">
+
+            <!-- guards questionare -->
+            <div class="column"><button id="defeatchoice" class="button is-light button is-large">
+                <p>Here to defeat you</p>
+              </button></div>
+            <div class="column"><button id="servantchoice" class="button is-light button is-large">
+                <p>A servant</p>
+              </button></div>
+            <div class="column"><button id="wizardchoice" class="button is-light button is-large">
+                <p>The wizard</p>
+              </button></div>
+
+          </div>
+        </div>
+        <!-- guard 2 -->
+        <div class="column is-one-quarter">
+          <div id="guardtwo" class="container">
+            <p>
+              <img id="char" src="http://images6.fanpop.com/image/forum/224000/224095_1507478348489_full.png"
+                alt="guard2" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- eighth textbook -->
+    <div id="textbox8" class="box hidden textbox">
+      Who are you??
+    </div>
+
+    <!-- you lost, go back to index -->
+    <div id="youlost" class="rblxcenter hidden">
+      <a class="button is-dark button is-large" href="index.html">You lost! Click me to restart</a>
+    </div>
+
+    <div id="passwordtitle" class="hidden">
+      <h1 class="title is-1 center2 textbox"><b>PASSWORD:</b>&nbsp; What's the most popular ROBLOX game?</h1>
+    </div>
+
+    <!-- password choices -->
+    <div id="password" class="hidden">
+      <div class="columns is-centered">
+        <div class="column is-one-fifths"></div>
+        <div class="column is-one-fifths">
+          <button id="adoptme" class="button is-light button is-large">
+            <p>Adopt Me!</p>
+          </button>
+        </div>
+        <div class="column is-one-fifths">
+          <button id="brookhaven" class="button is-light button is-large">
+            <p>Brookhaven</p>
+          </button>
+        </div>
+        <div class="column is-one-fifths">
+          <button id="mm2" class="button is-light button is-large">
+            <p>Murder Mystery 2</p>
+          </button>
+        </div>
+        <div class="column is-one-fifths"></div>
+      </div>
+    </div>
+
+    <!-- doors -->
+    <div id="doors" class="hidden">
+      <div class="center2">
+        <button id="door1">
+          <img class="door" src="images/door1.png" alt="door1" />
+        </button>
+        <button id="door2">
+          <img class="door" src="images/door2.png" alt="door2" />
+        </button>
+        <button id="door3">
+          <img class="door" src="images/door3.png" alt="door3" />
+        </button>
+      </div>
+    </div>
+
+    <!-- ninth textbook -->
+    <div id="textbox9" class="box hidden textbox">
+      I found the lair!
+    </div>
+    
+<!-- choose a door -->
+    <div id="doortitle" class="hidden">
+      <h1 class="title is-1 center2 textbox">Choose a door</h1>
+    </div>
+
+    <!-- next3 button -->
+    <div id="next3" class="container hidden next">
+      <button class="button is-info button is-large">Next</button>
+    </div>
+
+    <!-- tenth textbox -->
+    <div id="textbox10" class="box hidden textbox">
+      Bacon Boss: Who are you?? <br> You: Here to defeat you
+    </div>
+
+    <!-- use weapon button -->
+    <div id="useweapon" class="container hidden next">
+      <button class="button is-info button is-large">Use Weapon</button>
+    </div>
+
+    <div id="congratstitle" class="hidden">
+      <h1 class="title is-1 center2 textbox">Congrats, you defeated the Bacon Boss! 🥳🥳</h1>
+    </div>
+
+    <!-- next4 button -->
+    <div id="next4" class="container hidden next">
+      <button class="button is-info button is-large">Next</button>
+    </div>
+
+    <!-- play again button -->
+    <div id="playagain" class="container hidden next">
+    <a class="button is-dark button is-large" href="index.html">Click to play again</a>
+      </div>
+    
+  </section>
+  <script type="text/javascript" src="roblox.js"></script>
+</body>
+
+</html>

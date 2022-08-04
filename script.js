@@ -20,6 +20,10 @@ document.getElementById("start").onclick = function () {
         audioLoading.play();
         audioCountdown.play()//make this so sound can be display in the loading screen bc we interact with it
         }
+document.getElementById("start2").onclick = function () {
+        location.href = "roblox/roblox.html";
+        audioLoading.play();
+        audioCountdown.play()
 
 // typing text first screen
 // do later
