@@ -1,16 +1,24 @@
 let button = document.querySelector("#enter");
 const audioLoading = new Audio(
   "amongus.mp3"
-);
+)
+const audioCountdown = new Audio(
+  "countdown.mp3"
+)
+const audioEntering = new Audio(
+  "entering.mp3"
+)
 // if(button){
 //   button.addEventListener('click', function () {
 //         location.href = "amongus.html";}, false);
 // }
 
 document.getElementById("enter").onclick = function () {
-        location.href = "amongus.html";}
-// button.style.visibility = "hidden";
-let container = document.querySelector(".wrapper")
+        audioEntering.muted = true;
+        location.href = "amongus.html";
+        };
+
+let container = document.querySelector(".wrapper");
 // Typing EFFECT
 var _CONTENT = [ 
 	"Systems operational...",
@@ -18,7 +26,7 @@ var _CONTENT = [
   "3",
   "2",
   "1",
-  "Welcome Purple"
+  "Welcome Purple..."
 ];
 
 // Current sentence being processed
@@ -44,12 +52,15 @@ function Type() {
 	_ELEMENT.innerHTML = text;
 	_PART_INDEX++;
   
+  //audio background
   if (_PART == 1) {         //adding audio for typing effect
     audioLoading.play();}
   else if(_PART == 5) {
     audioLoading.play()
   }
-
+  else if(_PART == 2){
+    audioCountdown.play()}
+  
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
 		// Hide the cursor
@@ -88,11 +99,11 @@ function Delete() {
 		setTimeout(function() {
 			_CURSOR.style.display = 'inline-block';
 			_INTERVAL_VAL = setInterval(Type, 100);
-		}, 200);
+		}, 100);
 	}
 }
 
 
 // Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 120);
+_INTERVAL_VAL = setInterval(Type, 99);
 
