@@ -16,7 +16,10 @@ function checkButton() {
 
 
 document.getElementById("start").onclick = function () {
-        location.href = "space/space.html";}
+        location.href = "space/space.html";
+        audioLoading.play(); //make this so sound can be display in the loading screen bc we interact with it
+        }
+
 // typing text first screen
 // do later
 

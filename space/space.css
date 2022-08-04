@@ -3,6 +3,10 @@ html, body {
   width: 100%;
 }
 
+.space{
+  background: black;
+}
+
 .hidden {
   display: none;
 }
@@ -18,6 +22,12 @@ html, body {
   background-image: url(amongus.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.wiresPanel {
+  background-image: url(wiresPanel.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 /* Space CSS */
@@ -57,11 +67,6 @@ html, body {
 	}
 }
 
-/* INVENTORY */
-html {
-  box-sizing: border-box;
-}
-
 /*_________________________________________________________________________________________________________________ */
 /* button positioning */
 
@@ -83,44 +88,57 @@ html {
   align-items: center;
 }
 
+#scanID{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+}
 
 #scanButton{
-  width: 190px;
-  height: 120px;
+  width: fit-content;
+  height: fit-content;
   background-color: transparent;
   background-image: url(scanning.svg);
   background-repeat: no-repeat;
-  background-size: 310px;
-  border-radius: 90px;
+  background-size: cover;
   background-position: center;
+  border: none;
+  background-attachment: fixed;
+  transform: scale(10);
+}
+
+#scanButton::after{
   border: none;
 }
 
 #swipe-button{
-  grid-column: 2/4;
-  grid-row: 3/4;
+  grid-column: 2/3;
+  grid-row: 3/3;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #swipeButton{
-    width: 330px;
-    height: 175px;
+width: fit-content;
+    height: fit-content;
     background-color: transparent;
     background-image: url(admin.svg);
     background-repeat: no-repeat;
-    background-size: 600px;
-    background-position-x: -150px;
-    background-position-y: -170px;
+    background-size: cover;
+    background-position: center;
+  background-attachment: fixed;
   border: none;
+  transform: scale(25);
 }
 
 #wires-button{
-  grid-column: 3/4;
+  grid-column: 3/3;
   grid-row: 2/3;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 #wires-button{
@@ -129,25 +147,253 @@ justify-content: center;
 }
 
 #wiresButton{
-  width: 55px;
-  height: 75px;
+  width: inherit;
+  height: inherit;
   background-color: transparent;
   background-image: url(wires.svg);
   background-repeat: no-repeat;
-  background-size: 310px;
-  background-position-x: -115px;
-  background-position-y: -77px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transform: scale(10);
   border: none;
 }
 
-.button::active {
-  box-shadow: 2px 2px 5px #fc894d;
-}
+
 /*___________________________________________________________________________________________________________*/
 
 
-/* scan button */
+/* scan progress bar */
 #scan {
   position:relative;
-  
+}
+
+.scan-container{
+  grid-column:2/3;
+  grid-row:1/2;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.scanning{
+  position: relative;
+  width: 40em;
+  height: 3em;
+  background:gray;
+  border-radius: 2em;
+  color:white;
+}
+
+.scanning::before{
+  content: attr(data-label);
+  display:flex;
+  align-items: center;
+  position: absolute;
+  left: 1em;
+  top: .5em;
+  bottom: .5em;
+  width: calc(var(--width,0)*1%);
+  min-width: 1em;
+  max-width: calc(100% - 2em);
+  background: tomato;
+  border-radius: 1em;
+  padding:1em;
+}
+
+
+.id{
+  grid-column:2/3;
+  grid-row:1/2;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+/* Wires Task */
+.wirePanel{
+  grid-column:2/3;
+  grid-row:1/2;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+}
+/* body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: black;
+    height: 100vh;
+    overflow: hidden;
+} */
+
+
+.light {
+    opacity: 0;
+}
+
+.drag {
+    fill: white;
+    opacity: 0;
+}
+
+.line {
+    stroke-width: 18px;
+    pointer-events: none;
+}
+
+.line-back {
+    stroke-width: 30px;
+    pointer-events: none;
+}
+
+.line-1 {
+    stroke: #324d9c;
+}
+
+.line-1.line-back {
+    stroke: #25378d;
+}
+
+.line-2 {
+    stroke: #e52320;
+}
+
+.line-2.line-back {
+    stroke: #a71916;
+}
+
+.line-3 {
+    stroke: #ffeb13;
+}
+
+.line-3.line-back {
+    stroke: #aa9f17;
+}
+
+.line-4 {
+    stroke: #a6529a;
+}
+
+.line-4.line-back {
+    stroke: #90378c;
+}
+
+.c {
+    fill: #273065;
+    stroke: #1a1b36;
+}
+
+.c,
+.d,
+.e,
+.f,
+.k,
+.u {
+    stroke-miterlimit: 10;
+}
+
+.c,
+.d,
+.e,
+.f,
+.u,
+.y {
+    stroke-width: 5px;
+}
+
+.d {
+    fill: #71160e;
+    stroke: #280f10;
+}
+
+.e {
+    fill: #8c6c15;
+}
+
+.e,
+.u {
+    stroke: #38321a;
+}
+
+.f {
+    fill: #212021;
+    stroke: #000;
+}
+
+.h {
+    fill: #9b3015;
+    stroke: #471d12;
+}
+
+.h,
+.y {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.k,
+.y {
+    fill: none;
+}
+
+.k {
+    stroke: #1d1d1b;
+    stroke-width: 6px;
+}
+
+.l {
+    fill: #d9c905;
+}
+
+.m {
+    fill: #25378d;
+}
+
+.n {
+    fill: #324d9c;
+}
+
+.o {
+    fill: #a71916;
+}
+
+.p {
+    fill: #e52320;
+}
+
+.q {
+    fill: #aa9f17;
+}
+
+.r {
+    fill: #ffeb13;
+}
+
+.s {
+    fill: #90378c;
+}
+
+.t {
+    fill: #a6529a;
+}
+
+.u {
+    fill: #1d1d1b;
+}
+
+.v {
+    fill: #5b5c64;
+}
+
+.w {
+    fill: #292829;
+}
+
+.x {
+    fill: #2f3038;
+}
+
+.y {
+    stroke: #252526;
 }

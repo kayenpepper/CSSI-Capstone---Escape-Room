@@ -1,4 +1,7 @@
 let button = document.querySelector("#enter");
+const audioLoading = new Audio(
+  "amongus.mp3"
+);
 // if(button){
 //   button.addEventListener('click', function () {
 //         location.href = "amongus.html";}, false);
@@ -20,7 +23,6 @@ var _CONTENT = [
 
 // Current sentence being processed
 var _PART = 0;
-
 // Character number of the current sentence being processed 
 var _PART_INDEX = 0;
 
@@ -33,11 +35,20 @@ var _ELEMENT = document.querySelector("#text");
 var _CURSOR = document.querySelector("#cursor");
 
 // Implements typing effect
+if( _PART == 0)
+  audioLoading.play();
+
 function Type() { 
 	// Get substring with 1 characater added
 	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
 	_ELEMENT.innerHTML = text;
 	_PART_INDEX++;
+  
+  if (_PART == 1) {         //adding audio for typing effect
+    audioLoading.play();}
+  else if(_PART == 5) {
+    audioLoading.play()
+  }
 
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
@@ -62,7 +73,7 @@ function Delete() {
 	if(text === '') {
 		clearInterval(_INTERVAL_VAL);
 
-		// If current sentence was last then display the first one, else move to the next
+		// If current sentence was last then stop
 		if(_PART == (_CONTENT.length - 1)){  
       _PART = _PART; // stop at the last sentence without resetting the sentence counting again
       container.classList.add("hidden");
