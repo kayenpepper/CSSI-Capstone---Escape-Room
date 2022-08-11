@@ -430,21 +430,61 @@
       </svg>
     </div>
     <div class="hint" style="color:white; font-size:20px;margin-bottom: 10px; position: absolute; left:10px ">
-      <p style="margin-top: 40px;">Clues:</p>
-      <p class="clue1 hidden" style="margin-top: 40px;">Red passes by with yellow; red looks sus. They split at the
+      <div class="objectives">
+      <h3 style="color: white; margin-top: 40px; margin-left: 10px;">Objectives:</h3>
+      <ul>
+        <li style="margin-left: 15px;">Fix the ship</li>
+        <li style="margin-left: 15px;">Find the impostor</li>
+      </ul>
+      </div>
+      <h3 style="color: white; margin-top: 10px; margin-left: 10px;">Clues:</h3>
+      <p class="clue1 hidden" style="margin-left: 15px; margin-bottom: 0px;">Red passes by with yellow; red looks sus. They split at the
         hallway.</p>
-      <p class="clue2 hidden" style="margin-top: 40px;">You see cyan and green together walking to the electrical room.
+      <p class="clue2 hidden" style="margin-left: 15px; margin-bottom: 0px">You see cyan, red, and yellow together walking to the electrical
+        room.
       </p>
-      <p class="clue3 hidden" style="margin-top: 40px;">Someone with a hat vented, the lights were off so you could only<br>
-        see their outline and know it is a dark color.</br></p>
+      <p class="clue3 hidden" style="margin-left: 15px; margin-bottom: 0px;">Someone with a hat vented, yellow died in electrical.</p>
+    </div>
+    <div class="final-step">
+      <div class="crew hidden">
+        <button id="crew1" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew2" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew3" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew4" class="button"></button>
+      </div>
+      <div class="impostor hidden">
+        <button id="impostor1" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew6" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew7" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew8" class="button"></button>
+      </div>
+      <div class="crew hidden">
+        <button id="crew9" class="button"></button>
+      </div>
+    </div>
+    <div class = "return">
+      <button onclick="location.href = 'https://cssi-capstone-escape-room.kaitlinyen.repl.co/';" class="returnButton hidden">Return to Home</button>
+      <button onclick="location.href = 'https://cssi-capstone-escape-room.kaitlinyen.repl.co/';" class="returnButton2 hidden">Return to Home</button>
     </div>
   </div>
   <!--   End of puzzle container   -->
-
+<img src="amongus.svg" alt="amongusBckg" class="backgroundImg"/>
 
 
   <script src="space.js" type="text/javascript" defer></script>
-  <script src="typing.js" type="text/javascript" defer></script>
+  <!--   <script src="typing.js" type="text/javascript" defer></script> -->
   <script src="https://unpkg.com/gsap@3.10.4/dist/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
 

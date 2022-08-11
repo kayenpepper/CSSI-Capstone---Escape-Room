@@ -14,7 +14,18 @@ let lookaround = document.querySelector("#lookaround");
 let maincharacter = document.querySelector("#maincharacter");
 let baconhair = document.querySelector("#baconhair");
 let talktobacon = document.querySelector("#talktobacon");
+
+
+let textbox1 = document.querySelector("#textbox1");
 let textbox2 = document.querySelector("#textbox2");
+let textbox3 = document.querySelector("#textbook3");
+let textbox4 = document.querySelector("#textbox4");
+let textbox5 = document.querySelector("#textbox5");
+let textbox6 = document.querySelector("#textbox6");
+let textbox7 = document.querySelector("#textbox7");
+let textbox8 = document.querySelector("#textbox8");
+let textbox9 = document.querySelector("#textbox9");
+let textbox10 = document.querySelector("#textbox10");
 let gotoshop = document.querySelector("#gotoshop");
 let shop = document.querySelector(".shop");
 let shoptitle = document.querySelector("#shoptitle");
@@ -93,6 +104,7 @@ buyrobux.addEventListener("click", (e) => {
   amountofrobux.classList.remove("hidden");
   amountofrobux.innerHTML = "Robux: " + robux;
   options.classList.remove("hidden");
+  alert("Next page will display virtual money, nothing will happen to your real money");
 });
 
 function creditinfo() {

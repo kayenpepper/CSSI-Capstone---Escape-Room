@@ -1,5 +1,5 @@
 .firstbg {
-  background-image: url('images/scene1.png');
+  background-image: url('scene1.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .emptybg {
-  background-image: url('images/emptybg.png');
+  background-image: url('emptybg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .baconsbg {
-  background-image: url('images/baconsbg.png');
+  background-image: url('baconsbg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .castlebg {
-  background-image: url('images/castle.png');
+  background-image: url('castle.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -31,7 +31,7 @@
 }
 
 .guardsbg {
-  background-image: url('images/guards.png');
+  background-image: url('guards.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -39,7 +39,7 @@
 }
 
 .fightbg {
-  background-image: url('images/fightbg.png');
+  background-image: url('fightbg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 .doorsbg {
-  background-image: url('images/doorsbg.png');
+  background-image: url('doorsbg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -55,7 +55,7 @@
 }
 
 .lairbg {
-  background-image: url('images/lair.png');
+  background-image: url('lair.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -63,7 +63,7 @@
 }
 
 .trophybg {
-  background-image: url('images/trophybg.png');
+  background-image: url('trophybg.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

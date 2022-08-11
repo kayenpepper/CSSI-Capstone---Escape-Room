@@ -13,17 +13,21 @@ function checkButton() {
   location.replace(`${getSelectedValue.value}.html`);
 }
 
-
+document.getElementById("start1").onclick = function () {
+        location.href = "LoL/LoL.html";
+        audioWelcome.play();
+}
 
 document.getElementById("start").onclick = function () {
         location.href = "space/space.html";
         audioLoading.play();
-        audioCountdown.play()//make this so sound can be display in the loading screen bc we interact with it
-        }
+        audioCountdown.play();//make this so sound can be display in the loading screen bc we interact with it
+};
 document.getElementById("start2").onclick = function () {
         location.href = "roblox/roblox.html";
         audioLoading.play();
-        audioCountdown.play()
+        audioCountdown.play(); 
+};
 
 // typing text first screen
 // do later
