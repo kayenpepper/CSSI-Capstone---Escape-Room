@@ -96,6 +96,16 @@ html, body {
   border-radius: 10px;
 }
 
+.card-content{
+  height: 400px;
+  align-items: baseline;
+}
+
+.button{
+  margin-top: 10px;
+  align-self: baseline;
+}
+
 /* game page _____________________________________________ */
 .gamepage{
   background:black
