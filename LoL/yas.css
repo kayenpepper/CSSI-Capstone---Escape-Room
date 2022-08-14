@@ -10,6 +10,7 @@ html, body {
 }
 
 body{
+  background-color: black;
   background-image: url("https://pbs.twimg.com/media/EXS5vYBXkAEF-8T.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -60,13 +61,23 @@ body{
   font-size:40px;
 }
 
+.yas-context{
+  color: white;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size:40px;
+}
+
 .yas-container{
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
 .yone-container{
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 3/4;
   display:flex;
   justify-content: center;
@@ -76,34 +87,77 @@ body{
   background: transparent;
   width:10px;
   height:5px;
-  background-image: url("https://o.remove.bg/downloads/561ce66c-6b37-4106-a866-de8011834e1f/280f7d9c17715745836d8002beeaac76-removebg-preview-removebg-preview.png");
+  background-image: url("https://lh3.googleusercontent.com/8oILn_0QrWAyvp0-OIISQonLLn8tpTiLtREuuH4h9ihtabzDhC-Ev06HVkjF05kPBBw3vGn58osoC24Ohjtvdu5DNtjdcsO_teIcdshcl8CkK2uLp9Fnd09x8-CzGyMVWN3xa4aUMQ=w2400");
   background-repeat: no-repeat;
   background-size: 20% 50%;
   background-position: center;
   border: none;
   background-attachment: fixed;
-  transform: scale(300);
+  transform: scale(340);
   position: relative;
   left: 500px;
-  top: 250px
+  top: 150px;
 }
 
 .yone-pic{
   background: transparent;
   width:10px;
   height:5px;
-  background-image: url("https://o.remove.bg/downloads/7ad67c47-50dc-4128-965b-cba1bf6a60d8/Yone_Armored_1_Render-removebg-preview.png");
+  background-image: url("https://lh3.googleusercontent.com/5lwV2I-4EakDB5tGXZk-SWdVBfMT9VUbwzuSOrZumk84sCv2k1Fw1W4VW32GkZhGsSzA1yV2YqxoPSqoziyoVQwnk6MYeInvwEtLeyRjUxJ5uvZAdFUQ7op0ZaRCSgtTybvpjjyxmQ=w2400");
   background-repeat: no-repeat;
   background-size: 20% 50%;
   background-position: center;
   border: none;
   background-attachment: fixed;
-  transform: scale(330);
+  transform: scale(350);
   position: relative;
-  right:450px;
-  bottom: 200px
+  left:500px;
+  bottom: 400px
   
 }
+
+.choices{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#yes{
+  margin-bottom: 60px;
+  font-size:40px;
+  height:60px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid;
+  border-color: white;
+  color: white
+}
+
+#no{
+  font-size:40px;
+  height:60px;
+  border-radius: 50px;
+  background: transparent;
+  border: 2px solid;
+  border-color: white;
+  background: rgba(0, 0, 0, 1);
+  color: white
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes animate {
