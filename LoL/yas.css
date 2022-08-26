@@ -9,7 +9,7 @@ html, body {
   display: none;
 }
 
-body{
+.body{
   background-color: black;
   background-image: url("https://pbs.twimg.com/media/EXS5vYBXkAEF-8T.jpg");
   background-repeat: no-repeat;
@@ -33,12 +33,34 @@ body{
   animation-delay: 37s;
 }
 
+
 .container{
   grid-column: 2/3;
   grid-row: 3/4;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.choices{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#yes{
+  margin-bottom: 60px;
+  width: 50%; 
+  font-size:40px;
+  height:60px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid;
+  border-color: white;
+  color: white;
 }
 
 .interaction{
@@ -116,9 +138,9 @@ body{
   
 }
 
-.choices{
+/* .choices{
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 3/4;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -132,10 +154,10 @@ body{
   background: rgba(0, 0, 0, 1);
   border: 2px solid;
   border-color: white;
-  color: white
-}
+  color: white;
+} */
 
-#no{
+/* #no{
   font-size:40px;
   height:60px;
   border-radius: 50px;
@@ -144,7 +166,7 @@ body{
   border-color: white;
   background: rgba(0, 0, 0, 1);
   color: white
-}
+} */
 
 
 
